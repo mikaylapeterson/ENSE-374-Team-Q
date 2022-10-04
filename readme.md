@@ -1,3 +1,6 @@
-# ENSE 374 Team Q
+# ENSE 374 - Team Q
 
-TODO: Fill this in with information from the project wiki.
+This repository contains all for Team Q's project to create an interactive cookbook for The Legend of Zelda: Breath of the Wild.
+
+## Project Idea Selection
+Here is a link to our [Introductory video blog.](https://www.youtube.com/watch?v=y6P_IQRw4kA)
