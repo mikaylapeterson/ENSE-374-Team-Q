@@ -16,4 +16,4 @@ Cooking in Breath of the Wild is something they teach you how to do, but not wha
 ## Development Vlogs
 * [Vlog 1 - Introductory Video Blog](https://www.youtube.com/watch?v=y6P_IQRw4kA)
 * [Vlog 2 - Project Prerequisite Planning Video Blog](https://www.youtube.com/watch?v=y76x3Y3pgCM)
-* Vlog 3 - Architecture Planning Video Blog *(coming soon!)*
+* [Vlog 3 - Architecture Planning Video Blog](https://youtu.be/rDep7OU-igI)
