@@ -122,6 +122,20 @@ main {
 .accordion-button {
     font-family: "Dancing Script", cursive;
     font-size: larger;
+    color: white;
+    text-align: center;
+    display: inline;
+    background-color: var(--primary);
+}
+
+.accordion-button:not(.collapsed) {
+    color: white;
+    display: inline;
+    background-color: var(--primary);
+}
+
+.accordion-button::after {
+    display: none;
 }
 
 a {
