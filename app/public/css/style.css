@@ -116,7 +116,7 @@ main {
 }
 
 .accordion {
-    --bs-accordion-border-width: 5px;
+    --bs-accordion-border-width: 3px;
 }
 
 .accordion-item {
