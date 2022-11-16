@@ -98,3 +98,36 @@ html {
 main {
     padding-left: 20%;
 }
+
+.btn-light, .btn-primary {
+    width: 40%;
+    font-weight: bold;
+}
+
+.btn-light {
+    --bs-btn-color: var(--primary);
+    --bs-btn-border-color: var(--primary);
+}
+
+.btn-primary {
+    --bs-btn-bg: rgb(95, 180, 249);
+    --bs-btn-border-color: rgb(95, 180, 249);
+}
+
+.accordion-item {
+    background-color: var(--primary);
+}
+
+.accordion-button {
+    font-family: "Dancing Script", cursive;
+    font-size: larger;
+}
+
+a {
+    text-decoration: none;
+}
+
+label {
+    color: white;
+    font-weight: bold;
+}
