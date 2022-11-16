@@ -115,8 +115,17 @@ main {
     --bs-btn-border-color: var(--tertiary);
 }
 
+.accordion {
+    --bs-accordion-border-width: 5px;
+}
+
 .accordion-item {
     background-color: var(--primary);
+}
+
+.accordion-logo.accordion-button {
+    color: white;
+    font-size: smaller;
 }
 
 .accordion-button {
