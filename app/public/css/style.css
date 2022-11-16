@@ -3,6 +3,7 @@
 :root {
   --primary: #2b8091;
   --secondary: #4aadc2;
+  --tertiary: rgb(95, 180, 249);
   --main-text: #ffffff;
 }
 
@@ -110,8 +111,8 @@ main {
 }
 
 .btn-primary {
-    --bs-btn-bg: rgb(95, 180, 249);
-    --bs-btn-border-color: rgb(95, 180, 249);
+    --bs-btn-bg: var(--tertiary);
+    --bs-btn-border-color: var(--tertiary);
 }
 
 .accordion-item {
@@ -124,10 +125,11 @@ main {
 }
 
 a {
+    color: var(--tertiary);
     text-decoration: none;
 }
 
-label {
+p, label {
     color: white;
     font-weight: bold;
 }
