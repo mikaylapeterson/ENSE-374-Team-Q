@@ -16,6 +16,5 @@ app.listen(port, () => {
 });
 
 app.get("/", (req, res) => {
-  // TODO: Create actual page (for now will default to test page)
-  res.render("test");
+  res.render("recipes");
 });
