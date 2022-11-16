@@ -18,3 +18,12 @@ app.listen(port, () => {
 app.get("/", (req, res) => {
   res.render("recipes");
 });
+
+app.post("/", (req, res) => {
+  // placeholders so that the login and sign up buttons take you to the recipes page
+  res.render("recipes");
+});
+
+app.get("/login-or-signup", (req, res) => {
+  res.render("login-or-signup");
+});
