@@ -1,0 +1,30 @@
+<aside class="navbar container ">
+    <div class="main-logo">
+      Cook of the Wild
+    </div>
+    <div class="search">
+      <input class="form-control" type="text" id="task-input" placeholder="Enter Recipe Name Here">
+  </div>
+      
+    <%- include("../partials/filter-input.ejs", {category: "Meat"}) -%>
+    <%- include("../partials/filter-input.ejs", {category: "Vegetables"}) -%>
+    <%- include("../partials/filter-input.ejs", {category: "Fish"}) -%>
+    <%- include("../partials/filter-input.ejs", {category: "Poultry"}) -%>
+    <%- include("../partials/filter-input.ejs", {category: "Desserts"}) -%>
+    <%- include("../partials/filter-input.ejs", {category: "Favorites"}) -%>
+    <button class="search-button btn btn-outline-light" type="button" id="search">Search</button>
+    
+    <!-- User Dropdown -->
+    <!-- <div class="d-flex w-100 h-100 user-info">
+      <a href="#" class="d-flex align-items-center text-white  text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        <strong class="font-large">User</strong>
+      </a>
+      <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+        <li><a class="dropdown-item" href="#">New project...</a></li>
+        <li><a class="dropdown-item" href="#">Settings</a></li>
+        <li><a class="dropdown-item" href="#">Profile</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Sign out</a></li>
+      </ul>
+    </div> -->
+  </aside>

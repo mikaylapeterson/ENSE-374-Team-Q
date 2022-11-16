@@ -1,8 +1,100 @@
-body, html {
-    margin: 0;
-    
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins&display=swap");
+
+:root {
+  --primary: #2b8091;
+  --secondary: #4aadc2;
+  --main-text: #ffffff;
 }
 
-.title {
+body,
+html {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--secondary);
+
+}
+
+.mainSection {
+  height: 100%;
+  width: 100%;
+}
+
+.navbar {
+    display: block;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--primary);
+    border: #ffffff 1px solid;
+    border-left: 0;
+    border-radius: 0 3% 3% 0;
+    position: fixed;
     text-align: center;
+    left: 0;
+    width: 20%;
+}
+.main-logo {
+    width: 100%;
+    color: var(--main-text);
+    font-size: 3rem;
+    padding: 20px;
+    font-family: "Dancing Script", cursive;
+    border-bottom: 1px white solid;
+}
+
+.filter-input {
+    color: var(--main-text);
+    width: 75%;
+    margin: 15px auto;
+}
+
+
+.search {
+    border-bottom: 1px solid white;
+    padding: 10px;
+}
+.search-button {
+    width: 75%;
+}
+
+.user-info {
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    color: magenta;
+}
+
+.user-info > a {
+    text-align: center;
+    font-size: 2rem;
+}
+.header {
+    border-bottom: 1px var(--main-text) solid;
+}
+
+.header > h1 {
+    color: var(--main-text);
+    font-size: 4rem;
+    padding-left:  30px;
+
+}
+
+.card-title {
+    text-align: center;
+    color: var(--main-text);
+}
+.card-body {
+    width: 100%;
+    min-height: 100px;
+    background-color: var(--primary);
+}
+.cards {
+    margin: 10px 20px;
+    display: flex;
+    gap: 40px;
+}
+
+main {
+    padding-left: 20%;
 }

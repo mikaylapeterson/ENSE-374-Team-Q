@@ -1,0 +1,15 @@
+<%- include("layouts/header.ejs") -%>
+
+<section class="mainSection">
+    <%- include("layouts/sidebar.ejs") -%>
+
+    <main class="recipe-section">
+        <%- include("partials/category-section.ejs", {category: "Meat"}) -%>
+        <%- include("partials/category-section.ejs", {category: "Vegetables"}) -%>
+        <%- include("partials/category-section.ejs", {category: "Fish"}) -%>
+        <%- include("partials/category-section.ejs", {category: "Poultry"}) -%>
+    </main>
+  </section>
+
+
+<%- include("layouts/footer.ejs") -%>
