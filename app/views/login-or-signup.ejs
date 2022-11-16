@@ -1,9 +1,9 @@
 <%- include("layouts/header.ejs") -%>
 
 <section class="mainSection">
-    <main class="login-signup-section">
+    <main class="loginsignup">
       <div class="container">
-        <div class="accordion mainDivStyle" id="mainAccordion">
+        <div class="accordion" id="mainAccordion">
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -12,7 +12,7 @@
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse show m-3" aria-labelledby="headingOne" data-bs-parent="#mainAccordion">
               <div class="accordion-body">
-                <form action="/login" method="post">
+                <form action="/" method="post">
                   <div class="mb-3">
                     <label class="form-label" for="username">Username:</label>
                     <input class="form-control" type="text" name="usernameLogIn" id="usernameLogIn">
@@ -24,7 +24,7 @@
                   <div class="mb-3">
                     <p>Forgot Password? <a href="">Click Here</a></p>
                   </div>
-                  <button class="btn btn-light" type="button">Sign Up</button>
+                  <button class="btn btn-light" data-bs-toggle="collapse" data-bs-target="#collapseTwo" type="button">Sign Up</button>
                   <button class="btn btn-primary" type="submit">Login</button>
                 </form>
               </div>
@@ -38,7 +38,7 @@
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse m-3" aria-labelledby="headingTwo" data-bs-parent="#mainAccordion">
               <div class="accordion-body">
-                <form action="/register" method="post">
+                <form action="/" method="post">
                   <div class="mb-3">
                     <label class="form-label" for="username">Username:</label>
                     <input class="form-control" type="text" name="usernameReg" id="usernameReg">

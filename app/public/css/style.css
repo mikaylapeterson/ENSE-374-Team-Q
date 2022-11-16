@@ -100,6 +100,12 @@ main {
     padding-left: 20%;
 }
 
+main.loginsignup {
+    padding-top: 5%;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
 .btn-light, .btn-primary {
     width: 40%;
     font-weight: bold;
@@ -107,6 +113,7 @@ main {
 
 .btn-light {
     --bs-btn-color: var(--primary);
+    --bs-btn-hover-color: var(--primary);
     --bs-btn-border-color: var(--primary);
 }
 
