@@ -268,9 +268,47 @@ var recipe = new Recipe ({
 });
 SaveData(recipe);
 
-// Meat & Poultry
+// Meat & Poultry -> 31 Recipes
 var recipe = new Recipe ({
-    name: "Gourment Meat Stew",
+    name: "Copious Meat Skewers",
+    desc: "Just shove a bunch of meat on to a skewer and you're good to go.",
+    ingred1: "Any four different meats",
+    category: "meat"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Creamy Meat Soup",
+    desc: "This nutritious soup contains serious portions of lightly-braised meat and many vegetables.",
+    ingred1: "Any meat",
+    ingred2: "Any herb, vegetable, or flower",
+    ingred3: "Fresh Milk",
+    ingred4: "Rock Salt",
+    category: "meat"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Glazed Meat",
+    desc: "The sweetness of the honey permeates the meat, giving it a complex taste profile.",
+    ingred1: "Any meat",
+    ingred2: "Courser Bee Honey",
+    category: "meat"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Gourmet Meat Curry",
+    desc: "The high-quality meat used in this prized dish satisfies meat and curry lovers alike.",
+    ingred1: "Raw Gourmet Meat",
+    ingred2: "Goron Spice",
+    ingred3: "Hylian Rice",
+    category: "meat"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Gourmet Meat Stew",
     desc: "The meat has simmered for so long it melts in your mouth. A true bucket-list meal!",
     ingred1: "Raw Gourmet Meat or Raw Whole Bird",
     ingred2: "Fresh Milk",
@@ -280,7 +318,378 @@ var recipe = new Recipe ({
 });
 SaveData(recipe);
 
-// Seafood
+var recipe = new Recipe ({
+    name: "Gourmet Meat & Rice Bowl",
+    desc: "Only the most carefully selected cuts of high-quality meats go into this dish.",
+    ingred1: "Raw Gourmet Meat or Raw Whole Bird",
+    ingred2: "Rock Salt",
+    ingred3: "Hylian Rice",
+    category: "meat"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Gourmet Poultry Curry",
+    desc: "Once served in Hyrule Castle, the poultry used in this dish is of immensely high quality.",
+    ingred1: "Raw Whole Bird",
+    ingred2: "Goron Spice",
+    ingred3: "Hylian Rice",
+    category: "meat"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Gourmet Poultry Pilaf",
+    desc: "Made with the highest-quality poultry, every bite of this pilaf floods your mouth with flavor.",
+    ingred1: "Raw Whole Bird",
+    ingred2: "Bird Egg",
+    ingred3: "Goat Butter",
+    ingred4: "Hylian Rice",
+    category: "meat"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Gourmet Spiced Meat Skewer",
+    desc: "The rich aroma and juicy texture of this high-quality meat puts it in a league of its own.",
+    ingred1: "Raw Gourmet Meat",
+    ingred2: "Goron Spice",
+    category: "meat"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Meat Curry",
+    desc: "The heat from the spice allows you to enjoy the large portion of the meat's savoriness.",
+    ingred1: "Raw Meat",
+    ingred2: "Goron Spice",
+    ingred3: "Hylian Rice",
+    category: "meat"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Meat & Mushroom Skewer",
+    desc: "A filling dish made by grilling various mountain ingredients with either steak or bird meat.",
+    ingred1: "Any meat",
+    ingred2: "Any mushroom",
+    category: "meat"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Meat Pie",
+    desc: "You'll need an extra napkin to deal with this juicy pie of perfectly baked minced meat.",
+    ingred1: "Any meat",
+    ingred2: "Rock Salt",
+    ingred3: "Goat Butter",
+    ingred4: "Tabantha Wheat",
+    category: "meat"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Meat & Rice Bowl",
+    desc: "This dish of rice and lightly seared meat is a mainstay all throughout Hyrule.",
+    ingred1: "Raw Meat or Raw Bird Drumstick",
+    ingred2: "Rock Salt",
+    ingred3: "Hylian Rice",
+    category: "meat"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Meaty Rice Balls",
+    desc: "The sweet and spicy meat stuffed into these rice balls will keep you full for some time.",
+    ingred1: "Any meat",
+    ingred2: "Hylian Rice",
+    category: "meat"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Meat Skewer",
+    desc: "A juicy, filling snack made by grilling small chunks of meat on a skewer.",
+    ingred1: "Any meat",
+    category: "meat"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Meat Stew",
+    desc: "The hearty meat in this mainstay dish leaves bellies satisfied all throughout Hyrule.",
+    ingred1: "Raw Meat or Raw Bird Drumstick",
+    ingred2: "Fresh Milk",
+    ingred3: "Goat Butter",
+    ingred4: "Tabantha Wheat",
+    category: "meat"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Meat-Stuffed Pumpkin",
+    desc: "This hollow, meat-filled fortified pumpkin is a local specialty or Kakariko Village.",
+    ingred1: "Any meat",
+    ingred2: "Fortified Pumpkin",
+    category: "meat"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Pepper Steak",
+    desc: "A dish made by cooking meat in crushed peppers, suppressing the gamy taste while accentuating its flavor.",
+    ingred1: "Any meat",
+    ingred2: "Spicy Pepper",
+    category: "meat"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Poultry Curry",
+    desc: "The savory meat pairs well with the aroma of spice in this common curry.",
+    ingred1: "Raw Bird Drumstick",
+    ingred2: "Goron Spice",
+    ingred3: "Hylian Rice",
+    category: "meat"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Poultry Pilaf",
+    desc: "Sautéed Hylian rice steamed in poultry broth. Cook on low heat until the rice is fluffy.",
+    ingred1: "Raw Bird Drumstick",
+    ingred2: "Bird Egg",
+    ingred3: "Goat Butter",
+    ingred4: "Hylian Rice",
+    category: "meat"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Prime Meat Curry",
+    desc: "The high-quality meat in this curry has given it a deeper taste than most other curries.",
+    ingred1: "Raw Prime Meat",
+    ingred2: "Goron Spice",
+    ingred3: "Hylian Rice",
+    category: "meat"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Prime Poultry Curry",
+    desc: "The secret to this curry's flavor is taking it off the heat while you add the spices.",
+    ingred1: "Raw Bird Thigh",
+    ingred2: "Goron Spice",
+    ingred3: "Hylian Rice",
+    category: "meat"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Prime Poultry Pilaf",
+    desc: "The rice permeates the savory taste of the poultry in this Gerudo-region favorite.",
+    ingred1: "Raw Bird Thigh",
+    ingred2: "Bird Egg",
+    ingred3: "Goat Butter",
+    ingred4: "Hylian Rice",
+    category: "meat"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Prime Meat Stew",
+    desc: "Letting the large portions of choice cuts of meat simmer brought out their savoriness.",
+    ingred1: "Raw Prime Meat or Raw Bird Thigh",
+    ingred2: "Fresh Milk",
+    ingred3: "Goat Butter",
+    ingred4: "Tabantha Wheat",
+    category: "meat"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Prime Meat & Rice Bowl",
+    desc: "This bowl is loaded with high-quality meat. Your hunt for a serious meal ends here.",
+    ingred1: "Raw Prime Meat or Raw Bird Thigh",
+    ingred2: "Rock Salt",
+    ingred3: "Hylian Rice",
+    category: "meat"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Prime Spiced Meat Skewer",
+    desc: "The simple preparation of this steak dish belies its complex taste profile.",
+    ingred1: "Raw Prime Meat",
+    ingred2: "Goron Spice",
+    category: "meat"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Salt-Grilled Meat",
+    desc: "Short on ingredients? Just rub some meat in salt and cook it for a simple, tasty dish.",
+    ingred1: "Raw Meat or Raw Bird Drumstick",
+    ingred2: "Rock Salt",
+    category: "meat"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Salt-Grilled Gourmet Meat",
+    desc: "This lavish grilled dish makes liberal use of high-quality cuts of meat.",
+    ingred1: "Raw Gourmet Meat or Raw Whole Bird",
+    ingred2: "Rock Salt",
+    category: "meat"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Salt-Grilled Prime Meat",
+    desc: "A simple yet exquisite dish made by grilling high-quality meat on top of rock salt.",
+    ingred1: "Raw Prime Meat or Raw Bird Thigh",
+    ingred2: "Rock Salt",
+    category: "meat"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Spiced Meat Skewer",
+    desc: "A special Goron spice covers up the scent of the meat, allowing its flavor to shine.",
+    ingred1: "Raw Meat",
+    ingred2: "Goron Spice",
+    category: "meat"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Steamed Meat",
+    desc: "This meat dish has been wrapped in fragrant leaves and steamed to preserve its moisture.",
+    ingred1: "Any meat",
+    ingred2: "Any herb, vegetable, or flower",
+    category: "meat"
+});
+SaveData(recipe);
+
+// Seafood -> 23 Recipes
+var recipe = new Recipe ({
+    name: "Clam Chowder",
+    desc: "The nutritional value of hearty blueshell snail combines with butter and milk in a rich soup.",
+    ingred1: "Hearty Blueshell Snail",
+    ingred2: "Fresh Milk",
+    ingred3: "Tabantha Wheat",
+    ingred4: "Goat Butter",
+    category: "seafood"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Copious Fish Skewers",
+    desc: "It's just a whole heap of stuff shoved on to a skewer, but it's still a pretty tasty dish.",
+    ingred1: "Any four different fish",
+    category: "seafood"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Crab Omelet with Rice",
+    desc: "The fluffy crab legs pair perfectly with the rice for a truly scrumptious dish.",
+    ingred1: "Any crab",
+    ingred2: "Bird Egg",
+    ingred3: "Rock Salt",
+    ingred4: "Hylian Rice",
+    category: "seafood"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Crab Risotto",
+    desc: "An everyday staple of seaside villages, the secret to its delicious flavor lies in crab fat.",
+    ingred1: "Any crab",
+    ingred2: "Rock Salt",
+    ingred3: "Hylian Rice",
+    ingred4: "Goat Butter",
+    category: "seafood"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Crab Stir-Fry",
+    desc: "The Goron spice used in preparing this crab pairs perfectly with the flavor of the meat.",
+    ingred1: "Any crab",
+    ingred2: "Goron Spice",
+    category: "seafood"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Creamy Seafood Soup",
+    desc: "Thick-cut chunks of seafood and stock provides a satisfying savoriness.",
+    ingred1: "Any seafood",
+    ingred2: "Any herb, vegetable, or flower",
+    ingred3: "Rock Salt",
+    ingred4: "Fresh Milk",
+    category: "seafood"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Fish & Mushroom Skewer",
+    desc: "A simple dish made by cooking skewered, fresh fish alongside fragrant mushrooms.",
+    ingred1: "Any fish",
+    ingred2: "Any mushroom",
+    category: "seafood"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Fish Pie",
+    desc: "A mainstay in any fisherman's home, the crisp crust pairs well with the fishy flavor.",
+    ingred1: "Any seafood",
+    ingred2: "Rock Salt",
+    ingred3: "Goat Butter",
+    ingred4: "Tabantha Wheat",
+    category: "seafood"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Fish Skewer",
+    desc: "A simple dish made by cooking chunks of fresh fish on a skewer.",
+    ingred1: "Any fish",
+    category: "seafood"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Glazed Seafood",
+    desc: "A seafood dish that you can actually wolf down whole!",
+    ingred1: "Any seafood",
+    ingred2: "Courser Bee Honey",
+    category: "seafood"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Porgy Meuniere",
+    desc: "Popular among residents of coastal regions, this juicy porgy is a delish dish.",
+    ingred1: "Any Porgy",
+    ingred2: "Tabantha Wheat",
+    ingred3: "Goat Butter",
+    category: "seafood"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Salmon Meuniere",
+    desc: "The crispy skin of this fried hearty salmon puts its texture in a class all its own.",
+    ingred1: "Hearty Salmon",
+    ingred2: "Tabantha Wheat",
+    ingred3: "Goat Butter",
+    category: "seafood"
+});
+SaveData(recipe);
+
 var recipe = new Recipe ({
     name: "Salmon Risotto",
     desc: "The rice used in this rich risotto permeates the light flavor of the salmon.",
@@ -288,6 +697,101 @@ var recipe = new Recipe ({
     ingred2: "Rock Salt",
     ingred3: "Hylian Rice",
     ingred4: "Goat Butter",
+    category: "seafood"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Salt-Grilled Crab",
+    desc: "Nine out of ten fishermen agree: crab is best enjoyed grilled and with just a bit of salt.",
+    ingred1: "Any crab",
+    ingred2: "Rock Salt",
+    category: "seafood"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Salt-Grilled Fish",
+    desc: "A simple dish made by rolling a whole fish in natural rock salt before grilling it.",
+    ingred1: "Any fish",
+    ingred2: "Rock Salt",
+    category: "seafood"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Seafood Curry",
+    desc: "This dish brims with treasures from the sea. Its spice packs a kick, so it's not for kids.",
+    ingred1: "Hearty Blueshell Snail or any Porgy",
+    ingred2: "Hylian Rice",
+    ingred3: "Goron Spice",
+    category: "seafood"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Seafood Fried Rice",
+    desc: "Various seafood has been sautéed with rice. The stronger the flame, the tastier the dish!",
+    ingred1: "Hearty Blueshell Snail or any Porgy",
+    ingred2: "Hylian Rice",
+    ingred3: "Rock Salt",
+    category: "seafood"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Seafood Meuniere",
+    desc: "Rich butter flanks fresh seafood. The secret ingredient is lots and lots of love.",
+    ingred1: "Any seafood except Hearty Salmon or any Porgy",
+    ingred2: "Tabantha Wheat",
+    ingred3: "Goat Butter",
+    category: "seafood"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Seafood Paella",
+    desc: "No fisherman's birthday bash would be complete without this top-shelf seafood dish.",
+    ingred1: "Any Porgy",
+    ingred2: "Hearty Blueshell Snail",
+    ingred3: "Rock Salt",
+    ingred4: "Goat Butter",
+    ingred5: "Hylian Rice",
+    category: "seafood"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Seafood Rice Balls",
+    desc: "Stuffed with aromatic seafood, the flavor can vary by ingredients but never disappoints.",
+    ingred1: "Any fish",
+    ingred2: "Hylian Rice",
+    category: "seafood"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Seafood Skewer",
+    desc: "The natural water in this medley of seafaring creatures makes for a delicious broth.",
+    ingred1: "Any snail or crab",
+    category: "seafood"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Spicy Peppered Seafood",
+    desc: "It's just a whole heap of stuff shoved on to a skewer, but it's still a pretty tasty dish.",
+    ingred1: "Any seafood",
+    ingred2: "Spicy Pepper",
+    category: "seafood"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Steamed Seafood",
+    desc: "A refined dish made by wrapping a fresh fish in fragrant wild greens and cooking it.",
+    ingred1: "Any fish",
+    ingred2: "Any herb, vegetable, or flower",
     category: "seafood"
 });
 SaveData(recipe);
