@@ -18,7 +18,7 @@ const recipeSchema = new mongoose.Schema ({
 });
 const Recipe = mongoose.model ( "Recipe", recipeSchema );
 
-// Vegetarian
+// Vegetarian -> 26 Recipes
 var recipe = new Recipe ({
     name: "Carrot Stew",
     desc: "This simple stew sat simmering for a long time to bring out the sweetness of the carrots.",
@@ -28,7 +28,7 @@ var recipe = new Recipe ({
     ingred4: "Tabantha Wheat",
     category: "vegetarian"
 });
-recipe.save();
+SaveData(recipe);
 
 var recipe = new Recipe ({
     name: "Copious Mushroom Skewers",
@@ -36,7 +36,7 @@ var recipe = new Recipe ({
     ingred1: "Any four different mushrooms",
     category: "vegetarian"
 });
-recipe.save();
+SaveData(recipe);
 
 var recipe = new Recipe ({
     name: "Copious Fried Wild Greens",
@@ -44,7 +44,7 @@ var recipe = new Recipe ({
     ingred1: "Any four different herbs, vegetables, or flowers",
     category: "vegetarian"
 });
-recipe.save();
+SaveData(recipe);
 
 var recipe = new Recipe ({
     name: "Creamy Heart Soup",
@@ -55,7 +55,7 @@ var recipe = new Recipe ({
     ingred4: "Fresh Milk",
     category: "vegetarian"
 });
-recipe.save();
+SaveData(recipe);
 
 var recipe = new Recipe ({
     name: "Cream of Mushroom Soup",
@@ -66,7 +66,7 @@ var recipe = new Recipe ({
     ingred4: "Rock Salt",
     category: "vegetarian"
 });
-recipe.save();
+SaveData(recipe);
 
 var recipe = new Recipe ({
     name: "Cream of Vegetable Soup",
@@ -76,7 +76,7 @@ var recipe = new Recipe ({
     ingred3: "Rock Salt",
     category: "vegetarian"
 });
-recipe.save();
+SaveData(recipe);
 
 var recipe = new Recipe ({
     name: "Curry Pilaf",
@@ -86,7 +86,7 @@ var recipe = new Recipe ({
     ingred3: "Hylian Rice",
     category: "vegetarian"
 });
-recipe.save();
+SaveData(recipe);
 
 var recipe = new Recipe ({
     name: "Curry Rice",
@@ -95,7 +95,7 @@ var recipe = new Recipe ({
     ingred2: "Hylian Rice",
     category: "vegetarian"
 });
-recipe.save();
+SaveData(recipe);
 
 var recipe = new Recipe ({
     name: "Fragrant Mushroom Saute",
@@ -104,7 +104,7 @@ var recipe = new Recipe ({
     ingred2: "Goron Spice",
     category: "vegetarian"
 });
-recipe.save();
+SaveData(recipe);
 
 var recipe = new Recipe ({
     name: "Fried Egg and Rice",
@@ -113,7 +113,7 @@ var recipe = new Recipe ({
     ingred2: "Hylian Rice",
     category: "vegetarian"
 });
-recipe.save();
+SaveData(recipe);
 
 var recipe = new Recipe ({
     name: "Fried Wild Greens",
@@ -121,7 +121,7 @@ var recipe = new Recipe ({
     ingred1: "Any herb, vegetable, or flower",
     category: "vegetarian"
 });
-recipe.save();
+SaveData(recipe);
 
 var recipe = new Recipe ({
     name: "Herb Saute",
@@ -130,7 +130,7 @@ var recipe = new Recipe ({
     ingred2: "Goron Spice",
     category: "vegetarian"
 });
-recipe.save();
+SaveData(recipe);
 
 var recipe = new Recipe ({
     name: "Mushroom Omelet",
@@ -141,7 +141,7 @@ var recipe = new Recipe ({
     ingred4: "Rock Salt",
     category: "vegetarian"
 });
-recipe.save();
+SaveData(recipe);
 
 var recipe = new Recipe ({
     name: "Mushroom Rice Balls",
@@ -150,7 +150,7 @@ var recipe = new Recipe ({
     ingred2: "Hylian Rice",
     category: "vegetarian"
 });
-recipe.save();
+SaveData(recipe);
 
 var recipe = new Recipe ({
     name: "Mushroom Risotto",
@@ -161,7 +161,7 @@ var recipe = new Recipe ({
     ingred4: "Rock Salt",
     category: "vegetarian"
 });
-recipe.save();
+SaveData(recipe);
 
 var recipe = new Recipe ({
     name: "Mushroom Skewer",
@@ -169,7 +169,7 @@ var recipe = new Recipe ({
     ingred1: "Any mushroom",
     category: "vegetarian"
 });
-recipe.save();
+SaveData(recipe);
 
 var recipe = new Recipe ({
     name: "Omelet",
@@ -177,7 +177,7 @@ var recipe = new Recipe ({
     ingred1: "Bird Egg",
     category: "vegetarian"
 });
-recipe.save();
+SaveData(recipe);
 
 var recipe = new Recipe ({
     name: "Pumpkin Stew",
@@ -188,7 +188,7 @@ var recipe = new Recipe ({
     ingred4: "Tabantha Wheat",
     category: "vegetarian"
 });
-recipe.save();
+SaveData(recipe);
 
 var recipe = new Recipe ({
     name: "Salt-Grilled Greens",
@@ -197,7 +197,7 @@ var recipe = new Recipe ({
     ingred2: "Rock Salt",
     category: "vegetarian"
 });
-recipe.save();
+SaveData(recipe);
 
 var recipe = new Recipe ({
     name: "Salt-Grilled Mushrooms",
@@ -206,7 +206,7 @@ var recipe = new Recipe ({
     ingred2: "Rock Salt",
     category: "vegetarian"
 });
-recipe.save();
+SaveData(recipe);
 
 var recipe = new Recipe ({
     name: "Steamed Mushrooms",
@@ -215,7 +215,7 @@ var recipe = new Recipe ({
     ingred2: "Any herb, vegetable, or flower",
     category: "vegetarian"
 });
-recipe.save();
+SaveData(recipe);
 
 var recipe = new Recipe ({
     name: "Veggie Cream Soup",
@@ -225,7 +225,7 @@ var recipe = new Recipe ({
     ingred3: "Rock Salt",
     category: "vegetarian"
 });
-recipe.save();
+SaveData(recipe);
 
 var recipe = new Recipe ({
     name: "Vegetable Curry",
@@ -235,7 +235,7 @@ var recipe = new Recipe ({
     ingred3: "Hylian Rice",
     category: "vegetarian"
 });
-recipe.save();
+SaveData(recipe);
 
 var recipe = new Recipe ({
     name: "Vegetable Omelet",
@@ -246,7 +246,7 @@ var recipe = new Recipe ({
     ingred4: "Rock Salt",
     category: "vegetarian"
 });
-recipe.save();
+SaveData(recipe);
 
 var recipe = new Recipe ({
     name: "Veggie Rice Balls",
@@ -255,7 +255,7 @@ var recipe = new Recipe ({
     ingred2: "Hylian Rice",
     category: "vegetarian"
 });
-recipe.save();
+SaveData(recipe);
 
 var recipe = new Recipe ({
     name: "Vegetable Risotto",
@@ -266,7 +266,7 @@ var recipe = new Recipe ({
     ingred4: "Rock Salt",
     category: "vegetarian"
 });
-recipe.save();
+SaveData(recipe);
 
 // Meat & Poultry
 var recipe = new Recipe ({
@@ -278,7 +278,7 @@ var recipe = new Recipe ({
     ingred4: "Tabantha Wheat",
     category: "meat"
 });
-recipe.save();
+SaveData(recipe);
 
 // Seafood
 var recipe = new Recipe ({
@@ -290,9 +290,18 @@ var recipe = new Recipe ({
     ingred4: "Goat Butter",
     category: "seafood"
 });
-recipe.save();
+SaveData(recipe);
 
-// Surf&Turf
+// Surf&Turf -> 4 Recipes
+var recipe = new Recipe ({
+    name: "Gourmet Meat & Seafood Fry",
+    desc: "A marriage of the choicest cuts of meat and seafood. As delicious as it is filling!",
+    ingred1: "Raw Gourmet Meat or Raw Whole Bird",
+    ingred2: "Any seafood item",
+    category: "surfnturf"
+});
+SaveData(recipe);
+
 var recipe = new Recipe ({
     name: "Meat & Seafood Fry",
     desc: "A filling dish made by cooking fresh seafood and meat together.",
@@ -300,9 +309,70 @@ var recipe = new Recipe ({
     ingred2: "Any seafood item",
     category: "surfnturf"
 });
-recipe.save();
+SaveData(recipe);
 
-// Monster 
+var recipe = new Recipe ({
+    name: "Prime Meat & Seafood Fry",
+    desc: "A filling dish made by cooking fresh seafood and meat together.",
+    ingred1: "Raw Prime Meat or Raw Bird Thigh",
+    ingred2: "Any seafood item",
+    category: "surfnturf"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Spicy Meat & Seafood Fry",
+    desc: "A filling dish made by cooking fresh seafood and meat together.",
+    ingred1: "Hyrule Bass",
+    ingred2: "Raw Meat",
+    ingred3: "Spicy Pepper",
+    category: "surfnturf"
+});
+SaveData(recipe);
+
+// Monster -> 5 Recipes
+var recipe = new Recipe ({
+    name: "Monster Cake",
+    desc: "It's said that once you have a taste of this cake, you'll never forget its sweetness.",
+    ingred1: "Monster Extract",
+    ingred2: "Cane Sugar",
+    ingred3: "Goat Butter",
+    ingred4: "Tabantha Wheat",
+    category: "monster"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Monster Curry",
+    desc: "This unusual take on curry uses monster extract and doesn't rely on spices.",
+    ingred1: "Monster Extract",
+    ingred2: "Goron Spice",
+    ingred3: "Hylian Rice",
+    category: "monster"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Monster Soup",
+    desc: "Using monster extract as a base, this soup's distinct gaminess is either loved or hated.",
+    ingred1: "Monster Extract",
+    ingred2: "Goat Butter",
+    ingred3: "Fresh Milk",
+    ingred4: "Tabantha Wheat",
+    category: "monster"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Monster Stew",
+    desc: "Meat and seafood simmered in monster extract. A savory dish despite its ingredients.",
+    ingred1: "Monster Extract",
+    ingred2: "Any meat",
+    ingred3: "Any seafood",
+    category: "monster"
+});
+SaveData(recipe);
+
 var recipe = new Recipe ({
     name: "Monster Rice Balls",
     desc: "Rice balls flavored with monster extract. Their unique aroma is not for everyone.",
@@ -311,9 +381,17 @@ var recipe = new Recipe ({
     ingred3: "Rock Salt",
     category: "monster"
 });
-recipe.save();
+SaveData(recipe);
 
-// Snacks
+// Snacks -> 12 Recipes
+var recipe = new Recipe ({
+    name: "Copious Simmered Fruit",
+    desc: "The flavors of the various fruits in this simmered dish exist in perfect harmony.",
+    ingred1: "Any four different fruit",
+    category: "snack"
+});
+SaveData(recipe);
+
 var recipe = new Recipe ({
     name: "Dubious Food",
     desc: "It's too gross to even look at. A bizarre smell issues forth from this heap. Eating it won't hurt you, though...probably.",
@@ -321,18 +399,260 @@ var recipe = new Recipe ({
     ingred2: "Any monster part",
     category: "snack"
 });
-recipe.save();
+SaveData(recipe);
 
-// Desserts
+var recipe = new Recipe ({
+    name: "Fruit & Mushroom Mix",
+    desc: "This dish contrasts the sweetness of fruit with the savoriness of mushrooms.",
+    ingred1: "Any fruit",
+    ingred2: "Any mushroom",
+    category: "snack"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Glazed Mushrooms",
+    desc: "The honey in this mushroom dish gives it a sweet, complex taste and a savory finish.",
+    ingred1: "Any mushroom",
+    ingred2: "Courser Bee Honey",
+    category: "snack"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Glazed Veggies",
+    desc: "Don't like the taste of vegetables? Simply sauté them in honey for a salty-sweet flavor!",
+    ingred1: "Any vegetable",
+    ingred2: "Courser Bee Honey",
+    category: "snack"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Rock-Hard Food",
+    desc: "A dish gone awry after adding the wrong ingredient. Chewing your way through this won't be fun, but it will fill you up when you're between a rock and a hard place.",
+    ingred1: "Any wood or ore",
+    category: "snack"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Sauteed Nuts",
+    desc: "These sautéed tree seeds are the perfect snack for the busy adventurer on the go!",
+    ingred1: "Any nut",
+    category: "snack"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Sauteed Peppers",
+    desc: "The spiciness of these sautéed peppers has been broken by the heat for a sweeter taste.",
+    ingred1: "Spicy Pepper",
+    category: "snack"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Simmered Fruit",
+    desc: "This sweet dish is made by heaping tasty fruits into a pan and simmering until tender.",
+    ingred1: "Any fruit",
+    category: "snack"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Steamed Fruit",
+    desc: "A regional dish made by steaming near-ripened fruits in the leaves of fragrant plants.",
+    ingred1: "Any fruit",
+    ingred2: "Any herb, vegetable, or flower",
+    category: "snack"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Warm Milk",
+    desc: "Make this by heating up some milk. Drink it before bed to ensure a good night's sleep.",
+    ingred1: "Fresh Milk",
+    category: "snack"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Wheat Bread",
+    desc: "Made with wheat from the Tabantha region, this soft, springy bread smells just heavenly.",
+    ingred1: "Tabantha Wheat",
+    ingred2: "Rock Salt",
+    category: "snack"
+});
+SaveData(recipe);
+
+// Desserts -> 16 Recipes
 var recipe = new Recipe ({
     name: "Apple Pie",
     desc: "The crispy, flaky pie crust and sweet apples are a match made in heaven.",
-    ingred1: "Goat Butter",
-    ingred2: "Cane Sugar",
-    ingred3: "Tabantha Wheat",
+    ingred1: "Apple",
+    ingred2: "Goat Butter",
+    ingred3: "Cane Sugar",
+    ingred4: "Tabantha Wheat",
     category: "dessert"
 });
-recipe.save();
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Carrot Cake",
+    desc: "Even those who don't like carrots tend to enjoy the mild sweetness of this cake.",
+    ingred1: "Any carrot",
+    ingred2: "Goat Butter",
+    ingred3: "Cane Sugar",
+    ingred4: "Tabantha Wheat",
+    category: "dessert"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Egg Pudding",
+    desc: "Made by cooking eggs and milk in a special mold, its soft texture melts in your mouth.",
+    ingred1: "Bird Egg",
+    ingred2: "Fresh Milk",
+    ingred3: "Cane Sugar",
+    category: "dessert"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Egg Tart",
+    desc: "You'll know this simple dessert is done baking when it smells just delightful.",
+    ingred1: "Bird Egg",
+    ingred2: "Goat Butter",
+    ingred3: "Cane Sugar",
+    ingred4: "Tabantha Wheat",
+    category: "dessert"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Fried Bananas",
+    desc: "Children love fried mighty bananas. The trick is frying them over very high heat.",
+    ingred1: "Mighty Bananas",
+    ingred2: "Tabantha Wheat",
+    ingred3: "Cane Sugar",
+    category: "dessert"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Fruitcake",
+    desc: "Making ample use of fruits found all over Hyrule, this cake is a must for celebrations.",
+    ingred1: "Wildberry or Apple",
+    ingred2: "Any other fruit",
+    ingred3: "Cane Sugar",
+    ingred4: "Tabantha Wheat",
+    category: "dessert"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Fruit Pie",
+    desc: "A celebration isn't a celebration until this fruit-filled crust hits the table!",
+    ingred1: "Any fruit except apple or pumpkin",
+    ingred2: "Goat Butter",
+    ingred3: "Cane Sugar",
+    ingred4: "Tabantha Wheat",
+    category: "dessert"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Honey Crepe",
+    desc: "Honey has been drizzled over thin crepes to bring out their natural sweetness and flavor.",
+    ingred1: "Bird Egg",
+    ingred2: "Fresh Milk",
+    ingred3: "Cane Sugar",
+    ingred4: "Tabantha Wheat",
+    ingred5: "Courser Bee Honey",
+    category: "dessert"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Honeyed Apple",
+    desc: "A juicy sweet-and-sour dish combining newly ripened apples with honey.",
+    ingred1: "Apple",
+    ingred2: "Courser Bee Honey",
+    category: "dessert"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Honey Candy",
+    desc: "A natural sweet, brimming with nutrition and made by stewing fresh honey.",
+    ingred1: "Courser Bee Honey",
+    category: "dessert"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Honeyed Fruits",
+    desc: "A dish that combines the thick sweetness of honey with the acidity of sour fruits.",
+    ingred1: "Any fruit except apples",
+    ingred2: "Courser Bee Honey",
+    category: "dessert"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Hot Buttered Apple",
+    desc: "The apple's sweetness has been enhanced by smothering it with butter and baking it.",
+    ingred1: "Apple",
+    ingred2: "Goat Butter",
+    category: "dessert"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Nutcake",
+    desc: "Forest nuts give this cake a pleasant texture and a simple, understated sweetness.",
+    ingred1: "Any nut",
+    ingred2: "Goat Butter",
+    ingred3: "Cane Sugar",
+    ingred4: "Tabantha Wheat",
+    category: "dessert"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Pumpkin Pie",
+    desc: "The intense sweetness of fortified pumpkins makes this dessert popular among children.",
+    ingred1: "Fortified Pumpkin",
+    ingred2: "Goat Butter",
+    ingred3: "Cane Sugar",
+    ingred4: "Tabantha Wheat",
+    category: "dessert"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Plain Crepe",
+    desc: "The simplicity of this dish lets the flavor of its ingredients shine.",
+    ingred1: "Bird Egg",
+    ingred2: "Fresh Milk",
+    ingred3: "Cane Sugar",
+    ingred4: "Tabantha Wheat",
+    category: "dessert"
+});
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Wildberry Crepe",
+    desc: "Sweet, tart wildberries are folded into thin, springy dough to make this dessert.",
+    ingred1: "Bird Egg",
+    ingred2: "Fresh Milk",
+    ingred3: "Cane Sugar",
+    ingred4: "Tabantha Wheat",
+    ingred5: "Wildberry",
+    category: "dessert"
+});
+SaveData(recipe);
 
 // Elixir
 var recipe = new Recipe ({
@@ -342,4 +662,17 @@ var recipe = new Recipe ({
     ingred2: "Hearty food item (ie, hearty bass, hearty blueshell snail)",
     category: "elixir"
 });
-recipe.save();
+SaveData(recipe);
+
+var recipe = new Recipe ({
+    name: "Fairy Tonic",
+    //desc: "The crispy, flaky pie crust and sweet apples are a match made in heaven.",
+    ingred1: "Fairy",
+    ingred2: "Any gem, animal, or monster part",
+    category: "elixir"
+});
+SaveData(recipe);
+
+async function SaveData(recipe) {
+    try {await recipe.save();} catch (e) {console.log(e);}
+}
