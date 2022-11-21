@@ -18,6 +18,20 @@ const recipeSchema = new mongoose.Schema ({
 });
 const Recipe = mongoose.model ( "Recipe", recipeSchema );
 
+const findByCategory = async (queriedCategory) => {
+    const recipesList = await Recipe.find({ category: queriedCategory }, function (err, docs) {
+        console.log(`There are no recipes of category: ${category}`);
+    });
+    return recipesList;
+}
+
+const getCategories = async () => {
+    const recipeCategories = await Recipe.distinct("category", function (err, fields) {
+        console.log(`There are no categories.`);
+    });
+    return recipeCategories;
+}
+
 // Vegetarian -> 26 Recipes
 var recipe = new Recipe ({
     name: "Carrot Stew",
@@ -1180,3 +1194,6 @@ SaveData(recipe);
 async function SaveData(recipe) {
     try {await recipe.save();} catch (e) {console.log(e);}
 }
+
+module.exports.findByCategory = findByCategory;
+module.exports.getCategories = getCategories;

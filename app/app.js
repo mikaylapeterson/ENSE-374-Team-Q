@@ -1,6 +1,8 @@
 // Requirements
 const express = require("express");
 const mongo = require("mongoose");
+const { getCategories, findByCategory } = require("./cotw-mdb");
+
 
 // Create Express App and Setup
 const app = express();
@@ -15,7 +17,17 @@ app.listen(port, () => {
   console.log("App has started at ", port, "!");
 });
 
-app.get("/", (req, res) => {
+app.get("/", async (req, res) => {
+  const recipeCategories = await getCategories();
+  console.log("recipeCategories", recipesCategories);
+  const recipesList = {};
+  
+  recipeCategories.map(category => {
+    const currentCategoryRecipes = findByCategory(category);
+    recipesList[category] = currentCategoryRecipes;
+  })
+
+  console.log("recipesList", recipesList);
   res.render("recipes");
 });
 
