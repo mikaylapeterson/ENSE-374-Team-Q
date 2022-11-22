@@ -18,6 +18,8 @@ const recipeSchema = new mongoose.Schema ({
 });
 const Recipe = mongoose.model ( "Recipe", recipeSchema );
 
+rebuild();
+
 // Vegetarian -> 26 Recipes
 var recipe = new Recipe ({
     name: "Carrot Stew",
@@ -1177,6 +1179,10 @@ var recipe = new Recipe ({
 });
 SaveData(recipe);
 
+// Recipe saving
 async function SaveData(recipe) {
     try {await recipe.save();} catch (e) {console.log(e);}
 }
+
+// Reset database build
+async function rebuild() {await Recipe.collection.drop();}
