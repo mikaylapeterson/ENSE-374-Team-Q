@@ -4,11 +4,9 @@
     <%- include("layouts/sidebar.ejs", {categories: categories}) -%>
 
     <main class="recipe-section">
-      <% categories.forEach(category => { %>
-        <%- include("partials/category-section.ejs", {category: category, recipes: recipes[category]}) -%>
-      <% }) %>
-        
-       
+        <div class="breadcrumb">
+            <span><a href="./">Recipes</a> > <%=recipe.name%></span>
+        </div>
     </main>
   </section>
 

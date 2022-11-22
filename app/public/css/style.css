@@ -93,7 +93,8 @@ html {
 .cards {
     margin: 10px 20px;
     display: flex;
-    gap: 40px;
+    flex-wrap: wrap;
+    gap: 20px 5%;
 }
 
 main {
@@ -162,4 +163,17 @@ a {
 p, label {
     color: white;
     font-weight: bold;
+}
+
+.breadcrumb {
+    font-size: 1.5rem;
+    padding-top: 20px;
+    padding-left: 20px;
+    color: var(--main-text);
+}
+
+ a {
+     font-weight: bold;
+    text-decoration: none;
+    color: var(--main-text);
 }

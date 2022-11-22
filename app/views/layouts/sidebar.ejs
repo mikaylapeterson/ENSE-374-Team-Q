@@ -5,12 +5,11 @@
     <div class="search">
       <input class="form-control" type="text" id="task-input" placeholder="Enter Recipe Name Here">
   </div>
-      
-    <%- include("../partials/filter-input.ejs", {category: "Meat"}) -%>
-    <%- include("../partials/filter-input.ejs", {category: "Vegetables"}) -%>
-    <%- include("../partials/filter-input.ejs", {category: "Fish"}) -%>
-    <%- include("../partials/filter-input.ejs", {category: "Poultry"}) -%>
-    <%- include("../partials/filter-input.ejs", {category: "Desserts"}) -%>
+      <% categories.forEach(category => { %>
+        <%- include("../partials/filter-input.ejs", {category:category}) -%>
+      <% }) %> 
+    
+   
     <%- include("../partials/filter-input.ejs", {category: "Favorites"}) -%>
     <button class="search-button btn btn-outline-light" type="button" id="search">Search</button>
     
