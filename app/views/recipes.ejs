@@ -1,13 +1,14 @@
 <%- include("layouts/header.ejs") -%>
 
 <section class="mainSection">
-    <%- include("layouts/sidebar.ejs") -%>
+    <%- include("layouts/sidebar.ejs", {categories: categories}) -%>
 
     <main class="recipe-section">
-        <%- include("partials/category-section.ejs", {category: "Meat"}) -%>
-        <%- include("partials/category-section.ejs", {category: "Vegetables"}) -%>
-        <%- include("partials/category-section.ejs", {category: "Fish"}) -%>
-        <%- include("partials/category-section.ejs", {category: "Poultry"}) -%>
+      <% categories.forEach(category => { %>
+        <%- include("partials/category-section.ejs", {category: category, recipes: recipes[category]}) -%>
+      <% }) %>
+        
+       
     </main>
   </section>
 
