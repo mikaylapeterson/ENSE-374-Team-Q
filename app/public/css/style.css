@@ -66,7 +66,7 @@ html {
     color: magenta;
 }
 
-.user-info > a {
+.user-info  a {
     text-align: center;
     font-size: 2rem;
 }
@@ -172,8 +172,24 @@ p, label {
     color: var(--main-text);
 }
 
- a {
+.breadcrumb  a {
      font-weight: bold;
-    text-decoration: none;
     color: var(--main-text);
+}
+
+.detail-card {
+    background-color: var(--primary);
+    color: var(--main-text);
+    border: 3px white solid;
+}
+
+.col {
+    padding: 0;
+}
+
+.ingredients {
+    background-color: var(--primary);
+    color: var(--main-text);
+    border-color:  var(--secondary) ;
+    margin: 5px 0px;
 }

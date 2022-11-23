@@ -1,6 +1,6 @@
-<form name="recipe-form" method="post" action="./get-recipe">
+<form name="recipe-form-<%= recipe.name %>" method="post" action="./get-recipe">
     <input class="d-none" name="name" id="name" type="text" value="<%= recipe.name %>">
-    <div class="card" style="width: 18rem;" type="submit" onclick="document.forms['recipe-form'].submit();">
+    <div class="card" style="width: 18rem;" type="submit" onclick="document.forms['recipe-form-<%= recipe.name %>'].submit();">
         <img class="card-img-top img-thumbnail" src="icons/<%=recipe.name%>.png" onerror="this.onerror=null;this.src='icons/no_pic_found.webp'" alt="Image for ">
     <div class="card-body <%=recipe.category%>">
         <h5 class="card-title"><%= recipe.name %></h5>
