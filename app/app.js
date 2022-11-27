@@ -21,10 +21,12 @@ app.listen(port, async () => {
 app.get("/", async (req, res) => {
   const recipeCategories = await getCategories();
 
-  recipeCategories.map(async (category) => {
-    const currentCategoryRecipes = await findByCategory(category);
-    recipesList[category] = currentCategoryRecipes;
-  });
+  await Promise.all(
+    recipeCategories.map(async (category) => {
+      const currentCategoryRecipes = await findByCategory(category);
+      recipesList[category] = currentCategoryRecipes;
+    })
+  );
 
   res.render("recipes", { recipes: recipesList, categories: recipeCategories });
 });
@@ -47,4 +49,28 @@ app.post("/get-recipe", async (req, res) => {
 
 app.get("/login-or-signup", (req, res) => {
   res.render("login-or-signup");
+});
+
+app.post("/filter", async (req, res) => {
+  // Checks if any inputs were selected, and returns to home page if not
+  if (Object.keys(req.body).length === 0) {
+    res.redirect("/");
+    return;
+  }
+  const filteredRecipesList = {};
+
+  const formData = Object.keys(req.body).map((checkedInput) => checkedInput);
+  const recipeCategories = await getCategories();
+
+  await Promise.all(
+    formData.map(async (category) => {
+      const currentCategoryRecipes = await findByCategory(category);
+      filteredRecipesList[category] = currentCategoryRecipes;
+    })
+  );
+
+  res.render("recipes", {
+    recipes: filteredRecipesList,
+    categories: recipeCategories,
+  });
 });

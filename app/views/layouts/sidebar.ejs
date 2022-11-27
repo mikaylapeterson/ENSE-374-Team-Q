@@ -2,16 +2,21 @@
     <div class="main-logo">
       Cook of the Wild
     </div>
-    <div class="search">
-      <input class="form-control" type="text" id="task-input" placeholder="Enter Recipe Name Here">
-  </div>
+    <form action="/filter" method="post">
+      <div class="search">
+        <input class="form-control" type="text" id="task-input" placeholder="Enter Recipe Name Here">
+      </div>
+    
       <% categories.forEach(category => { %>
         <%- include("../partials/filter-input.ejs", {category:category}) -%>
       <% }) %> 
+      <%- include("../partials/filter-input.ejs", {category: "Favorites"}) -%>
+      <input class="search-button btn btn-outline-light" type="submit" id="search" value="Search" />
+    </form>
+     
     
    
-    <%- include("../partials/filter-input.ejs", {category: "Favorites"}) -%>
-    <button class="search-button btn btn-outline-light" type="button" id="search">Search</button>
+    
     
     <!-- User Dropdown -->
     <!-- <div class="d-flex w-100 h-100 user-info">

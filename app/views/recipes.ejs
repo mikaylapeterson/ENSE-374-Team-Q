@@ -5,7 +5,9 @@
 
     <main class="recipe-section">
       <% categories.forEach(category => { %>
-        <%- include("partials/category-section.ejs", {category: category, recipes: recipes[category]}) -%>
+        <% if(recipes[category]) { %> 
+          <%- include("partials/category-section.ejs", {category: category, recipes: recipes[category]}) -%>
+        <% } %> 
       <% }) %>
         
        
