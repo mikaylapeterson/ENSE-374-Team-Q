@@ -53,14 +53,19 @@ app.get("/login-or-signup", (req, res) => {
 
 app.post("/filter", async (req, res) => {
   // Checks if any inputs were selected, and returns to home page if not
-  if (Object.keys(req.body).length === 0) {
+  const search = req.body.search;
+
+  if (Object.keys(req.body).length === 1 && search == "") {
     res.redirect("/");
     return;
   }
   const filteredRecipesList = {};
 
-  const formData = Object.keys(req.body).map((checkedInput) => checkedInput);
-  const recipeCategories = await getCategories();
+  const formData = Object.keys(req.body).filter(
+    (checkedInput) => checkedInput != "search"
+  );
+  console.log("formData", formData);
+  let recipeCategories = await getCategories();
 
   await Promise.all(
     formData.map(async (category) => {
@@ -68,6 +73,14 @@ app.post("/filter", async (req, res) => {
       filteredRecipesList[category] = currentCategoryRecipes;
     })
   );
+
+  if (search) {
+    const queriedRecipe = await findByName(search);
+    if (queriedRecipe) {
+      filteredRecipesList["searched"] = [queriedRecipe];
+      recipeCategories = ["searched", ...recipeCategories];
+    }
+  }
 
   res.render("recipes", {
     recipes: filteredRecipesList,
