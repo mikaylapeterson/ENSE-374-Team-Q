@@ -1,16 +1,15 @@
 <%- include("layouts/header.ejs") -%>
 
 <section class="mainSection">
-    <%- include("layouts/sidebar.ejs", {categories: categories}) -%>
+  <%- include("layouts/sidebar.ejs", {categories: categories}) -%>
 
-    <main class="recipe-section">
-      <% categories.forEach(category => { %>
-        <%- include("partials/category-section.ejs", {category: category, recipes: recipes[category]}) -%>
-      <% }) %>
-        
-       
-    </main>
-  </section>
-
+  <main class="recipe-section">
+    <% categories.forEach(category => { %> 
+      <% if(recipes[category]) { %> 
+       <%-include("partials/category-section.ejs", {category: category, recipes: recipes[category]}) -%> 
+      <% } %> 
+    <% }) %>
+  </main>
+</section>
 
 <%- include("layouts/footer.ejs") -%>
