@@ -77,6 +77,60 @@ app.get("/login-or-signup", (req, res) => {
   res.render("login-or-signup");
 });
 
+app.post( "/login", ( req, res ) => {
+  console.log( "User " + req.body.usernameReg + " is attempting to log in" );
+  console.log(req.body);
+  const user = new User ({
+      username: req.body.username,
+      password: req.body.pword
+  });
+  req.login ( user, ( err ) => {
+      if ( err ) {
+          console.log( err );
+          res.redirect( "/" );
+      } else {
+          // added the failureRedirect here
+          passport.authenticate( "local", { failureRedirect: '/' } )( req, res, () => {
+              res.redirect( "/todo" ); 
+          });
+      }
+  });
+});
+
+app.post("/register", function (req, res) {
+  console.log( "User " + req.body.username + " is attempting to register" );
+  console.log(req.body);
+
+  if (req.body.pwordReg === req.body.confirmPwordReg)
+  {
+      User.register({ username : req.body.usernameReg },
+          req.body.pwordReg, 
+          ( err, user ) => {
+          if ( err) {
+              console.log( err );
+              res.redirect( "/login-or-signup" );
+          } else {
+              passport.authenticate( "local" )( req, res, () => {
+              res.redirect( "/" );
+              });
+          }
+      });
+  }
+  else
+  {
+      res.redirect("/login-or-signup");
+  }
+});
+
+app.get('/logout', function(req, res, next) {
+  req.logout(function(err) {
+    if (err) { 
+        return next(err); 
+    }
+    res.redirect('/');
+  });
+});
+
 app.post("/filter", async (req, res) => {
   // Checks if any inputs were selected, and returns to home page if not
   const search = req.body.search;
