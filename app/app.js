@@ -1,6 +1,12 @@
 // Requirements
 const express = require("express");
 const mongo = require("mongoose");
+const internal = require('stream');
+const { boolean } = require('webidl-conversions');
+const session = require("express-session");
+const passport = require("passport");
+const passportLocalMongoose = require("passport-local-mongoose");
+require("dotenv").config();
 const { getCategories, findByCategory, findByName } = require("./cotw-mdb");
 
 // Create Express App and Setup
@@ -8,9 +14,30 @@ const app = express();
 
 const recipesList = {};
 
+// create a session
+app.use(session({
+  secret: process.env.SECRET,
+  resave: false,
+  saveUninitialized: false
+}));
+
+app.use (passport.initialize());
+app.use (passport.session());
+
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
+
+// create the user
+const userSchema = new mongo.Schema ({
+  username: String,
+  password: String
+})
+
+// plugins extend Schema functionality
+userSchema.plugin(passportLocalMongoose);
+
+const User = new mongo.model("User", userSchema);
 
 const port = 3000;
 
@@ -32,8 +59,7 @@ app.get("/", async (req, res) => {
 });
 
 app.post("/", (req, res) => {
-  // placeholders so that the login and sign up buttons take you to the recipes page
-  res.render("recipes");
+  res.redirect("/");
 });
 
 app.post("/get-recipe", async (req, res) => {
