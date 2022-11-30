@@ -14,7 +14,6 @@ const app = express();
 
 const recipesList = {};
 
-// create a session
 app.use(session({
   secret: process.env.SECRET,
   resave: false,
@@ -38,6 +37,11 @@ const userSchema = new mongo.Schema ({
 userSchema.plugin(passportLocalMongoose);
 
 const User = new mongo.model("User", userSchema);
+
+passport.use(User.createStrategy());
+
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
 
 const port = 3000;
 
@@ -78,27 +82,28 @@ app.get("/login-or-signup", (req, res) => {
 });
 
 app.post( "/login", ( req, res ) => {
-  console.log( "User " + req.body.usernameReg + " is attempting to log in" );
+  console.log( "User " + req.body.usernameLogIn + " is attempting to log in" );
   console.log(req.body);
+
   const user = new User ({
-      username: req.body.username,
-      password: req.body.pword
+      username: req.body.usernameLogIn,
+      password: req.body.pwordLogIn
   });
   req.login ( user, ( err ) => {
       if ( err ) {
           console.log( err );
-          res.redirect( "/" );
+          res.redirect( "/login-or-signup" );
       } else {
           // added the failureRedirect here
-          passport.authenticate( "local", { failureRedirect: '/' } )( req, res, () => {
-              res.redirect( "/todo" ); 
+          passport.authenticate( "local", { failureRedirect: '/login-or-signup' } )( req, res, () => {
+              res.redirect( "/" ); 
           });
       }
   });
 });
 
 app.post("/register", function (req, res) {
-  console.log( "User " + req.body.username + " is attempting to register" );
+  console.log( "User " + req.body.usernameReg + " is attempting to register" );
   console.log(req.body);
 
   if (req.body.pwordReg === req.body.confirmPwordReg)
