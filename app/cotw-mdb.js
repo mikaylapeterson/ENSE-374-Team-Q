@@ -35,6 +35,8 @@ const findByName = async (recipeName) => {
   return queriedRecipe;
 };
 
+rebuild();
+
 // Vegetarian -> 26 Recipes
 var recipe = new Recipe({
   name: "Carrot Stew",
@@ -1194,14 +1196,16 @@ var recipe = new Recipe({
 });
 SaveData(recipe);
 
+// Recipe saving
 async function SaveData(recipe) {
-  try {
-    await recipe.save();
-  } catch (e) {
-    console.log(e);
-  }
+    try {await recipe.save();} catch (e) {console.log(e);}
 }
+
+// Reset database build
+async function rebuild() {await Recipe.collection.drop();}
+
 
 module.exports.findByCategory = findByCategory;
 module.exports.findByName = findByName;
 module.exports.getCategories = getCategories;
+
