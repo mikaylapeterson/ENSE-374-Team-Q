@@ -1,5 +1,5 @@
-# ENSE 374 - Team Q
 
+![Cook of the Wild Banner - Mikayla personal-6](https://user-images.githubusercontent.com/98986881/204672844-57e8f5a0-426b-4b6a-8922-01e12b4796ae.png)
 This repository contains all files for Team Q's project to create an interactive cookbook for The Legend of Zelda: Breath of the Wild.
 
 ## Members

@@ -1,16 +1,25 @@
-<div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="images/copiousMeatSkewers.png" alt="Card image cap">
-    <div class="card-body">
-        <h5 class="card-title">Copious Meat Skewers</h5>
+<form name="recipe-form-<%= recipe.name %>" method="post" action="./get-recipe">
+  <input
+    class="d-none"
+    name="name"
+    id="name"
+    type="text"
+    value="<%= recipe.name %>"
+  />
+  <div
+    class="card"
+    style="width: 18rem"
+    type="submit"
+    onclick="document.forms['recipe-form-<%= recipe.name %>'].submit();"
+  >
+    <img
+      class="card-img-top img-thumbnail"
+      src="icons/<%=recipe.name%>.png"
+      onerror="this.onerror=null;this.src='icons/no_pic_found.webp'"
+      alt="Image for recipe"
+    />
+    <div class="card-body <%=recipe.category%>">
+      <h5 class="card-title"><%= recipe.name %></h5>
     </div>
-</div>
-  
-  <!-- Use When DB Working -->
-<!-- <form method="post" action="./getRecipe">
-    <button class="card" style="width: 18rem;" type="submit">
-        <img class="card-img-top" src="images/copiousMeatSkewers.png" alt="Card image cap">
-        <div class="card-body">
-        <h5 class="card-title">Copious Meat Skewers</h5>
-        </div>
-    </button>
-</form> -->
+  </div>
+</form>

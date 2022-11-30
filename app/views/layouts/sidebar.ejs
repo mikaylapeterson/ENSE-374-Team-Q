@@ -2,17 +2,25 @@
     <div class="main-logo">
       Cook of the Wild
     </div>
-    <div class="search">
-      <input class="form-control" type="text" id="task-input" placeholder="Enter Recipe Name Here">
-  </div>
-      
-    <%- include("../partials/filter-input.ejs", {category: "Meat"}) -%>
-    <%- include("../partials/filter-input.ejs", {category: "Vegetables"}) -%>
-    <%- include("../partials/filter-input.ejs", {category: "Fish"}) -%>
-    <%- include("../partials/filter-input.ejs", {category: "Poultry"}) -%>
-    <%- include("../partials/filter-input.ejs", {category: "Desserts"}) -%>
-    <%- include("../partials/filter-input.ejs", {category: "Favorites"}) -%>
-    <button class="search-button btn btn-outline-light" type="button" id="search">Search</button>
+    <form action="/filter" method="post">
+      <div class="search">
+        <input class="form-control" type="text" id="task-input" name="search" placeholder="Enter Recipe Name Here">
+      </div>
+    
+      <% categories.forEach(category => { %>
+        <% if(category != "searched") { %> 
+          <%- include("../partials/filter-input.ejs", {category:category}) -%>
+        <% } %>  
+      <% }) %> 
+      <%- include("../partials/filter-input.ejs", {category: "Favorites"}) -%>
+      <input class="search-button btn btn-outline-light" type="submit" id="search" value="Search" />
+    </form>
+  <form action="/" method="get" class="pt-3">
+    <input class="search-button btn btn-light w-75" type="submit" id="search" value="Back to Home" /> 
+  </form>
+    
+   
+    
     
     <!-- User Dropdown -->
     <!-- <div class="d-flex w-100 h-100 user-info">

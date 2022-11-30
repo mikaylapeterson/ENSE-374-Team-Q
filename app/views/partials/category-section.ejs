@@ -1,11 +1,12 @@
+<% if(recipes) { %>
 <div>
-    <div class="header">
-        <h1><%= category %></h1>
-    </div>
-    <div class="cards">
-        <%- include("recipe-card.ejs") -%>
-        <%- include("recipe-card.ejs") -%>
-        <%- include("recipe-card.ejs") -%>
-        <%- include("recipe-card.ejs") -%>
-    </div>
+  <div class="header">
+    <h1><%= category[0].toUpperCase() + category.substring(1) %></h1>
+  </div>
+  <div class="cards">
+    <% recipes.forEach(recipe => { %> 
+      <%- include("recipe-card.ejs", {recipe: recipe}) -%> 
+    <% }) %>
+  </div>
 </div>
+<% } %>

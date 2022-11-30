@@ -66,7 +66,7 @@ html {
     color: magenta;
 }
 
-.user-info > a {
+.user-info  a {
     text-align: center;
     font-size: 2rem;
 }
@@ -93,7 +93,8 @@ html {
 .cards {
     margin: 10px 20px;
     display: flex;
-    gap: 40px;
+    flex-wrap: wrap;
+    gap: 20px 5%;
 }
 
 main {
@@ -162,4 +163,33 @@ a {
 p, label {
     color: white;
     font-weight: bold;
+}
+
+.breadcrumb {
+    font-size: 1.5rem;
+    padding-top: 20px;
+    padding-left: 20px;
+    color: var(--main-text);
+}
+
+.breadcrumb  a {
+     font-weight: bold;
+    color: var(--main-text);
+}
+
+.detail-card {
+    background-color: var(--primary);
+    color: var(--main-text);
+    border: 3px white solid;
+}
+
+.col {
+    padding: 0;
+}
+
+.ingredients {
+    background-color: var(--primary);
+    color: var(--main-text);
+    border-color:  var(--secondary) ;
+    margin: 5px 0px;
 }
