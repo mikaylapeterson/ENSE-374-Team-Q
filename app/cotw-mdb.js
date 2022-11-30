@@ -807,7 +807,7 @@ var recipe = new Recipe({
 SaveData(recipe);
 
 var recipe = new Recipe({
-  name: "Steamed Seafood",
+  name: "Steamed Fish",
   desc: "A refined dish made by wrapping a fresh fish in fragrant wild greens and cooking it.",
   ingred1: "Any fish",
   ingred2: "Any herb, vegetable, or flower",
