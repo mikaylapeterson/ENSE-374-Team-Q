@@ -31,7 +31,7 @@ const getCategories = async () => {
 };
 
 const findByName = async (recipeName) => {
-  const queriedRecipe = await Recipe.findOne({ name: recipeName });
+  const queriedRecipe = await Recipe.findOne({ name: { $regex: recipeName, $options: 'i'}});
   return queriedRecipe;
 };
 
