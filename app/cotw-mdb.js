@@ -21,7 +21,7 @@ const recipeSchema = new mongoose.Schema({
 const Recipe = mongoose.model("Recipe", recipeSchema);
 
 const findByCategory = async (queriedCategory) => {
-  const recipesList = await Recipe.find({ category: queriedCategory });
+  const recipesList = await Recipe.find({ category: queriedCategory }).sort({ name: 1 });
   return recipesList;
 };
 
