@@ -193,3 +193,7 @@ p, label {
     border-color:  var(--secondary) ;
     margin: 5px 0px;
 }
+
+.text-lg {
+    font-size: 20px;
+}

@@ -7,20 +7,6 @@
     <% } else if(header === "Ingredients") { %>
         <%- include("./details/ingredients.ejs", {recipe: recipe}) -%>
     <% } else if(header === "Description") { %>
-        <p class="p-3 font-weight-normal">"<%= recipe.desc %>"</p>
-    <% } else { %>
-        <ul class="list-group list-group-flush  text-center mx-auto">
-            <li class="list-group-item ingredients">Ingredient 1</li>
-            <li class="list-group-item ingredients">Ingredient 1</li>
-            <li class="list-group-item ingredients">Ingredient 1</li>
-            <li class="list-group-item ingredients">Ingredient 1</li>
-            <li class="list-group-item ingredients">Ingredient 1</li>
-        </ul> 
-    <% } %> 
-        
-
+        <p class="p-3 font-weight-normal text-lg text-center">"<%= recipe.desc %>"</p>
+    <% } %>
 </div>
-
-
-    <!-- Buffs -->
-    
