@@ -2,7 +2,7 @@
   "name": "cotw",
   "version": "1.0.0",
   "description": "Web App for Cook of the Wild. Features recipes from BOTW.",
-  "main": "index.js",
+  "main": "app.js",
   "dependencies": {
     "dotenv": "^16.0.3",
     "ejs": "^3.1.8",
