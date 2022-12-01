@@ -1,6 +1,6 @@
 # Installation Instructions
 
-## Pre-Installation
+## Installation Requirements
 The following items are required to use Cook of the Wild:
 1. [Node.js](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 2. [nodemon](https://www.npmjs.com/package/nodemon)
