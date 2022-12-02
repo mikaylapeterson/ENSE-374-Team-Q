@@ -19,4 +19,7 @@ Our [Kanban board](https://github.com/users/mikaylapeterson/projects/1/views/2) 
 * [Vlog 1 - Introductory Video Blog](https://www.youtube.com/watch?v=y6P_IQRw4kA)
 * [Vlog 2 - Project Prerequisite Planning Video Blog](https://www.youtube.com/watch?v=y76x3Y3pgCM)
 * [Vlog 3 - Architecture Planning Video Blog](https://youtu.be/rDep7OU-igI)
-* [Our Commercial](https://youtu.be/yOFJm4Uuveo)!
+* [Our Commercial](https://youtu.be/yOFJm4Uuveo)
+
+## Installation
+Installation requirements and instructions can be found [here](/Installation%20Instructions.md).
